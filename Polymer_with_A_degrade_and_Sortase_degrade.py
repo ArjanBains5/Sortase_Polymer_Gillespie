@@ -24,6 +24,7 @@ import matplotlib.pyplot as plt
 # reaction constants; include ds term for death of sortase over time
 ds = 1 #sortase is working at 100% efficiency
 
+#set initial reaction rates
 c1 = 1*ds
 c2 = 0.3*ds #this is reverse reaction 
 c3 = 0.2 #when this is high, A decays  super fast
@@ -94,17 +95,17 @@ while current_t < tmax:
     a0 = sum(a)
     
     #calculate the new reaction constants:
-    c1 = 1*ds
-    c2 = 0.3*ds #this is reverse reaction 
-    c3 = 0.2 #when this is high, A decays  super fast
-    c4 = 1*ds
-    c5 = 0.3*ds
-    c6 = 1*ds
-    c7 = 0.3*ds
-    c8 = 1*ds
-    c9 = 0.3*ds
-    c10 = 1*ds
-    c11 = 0.3*ds
+    c1 = c1*ds
+    c2 = c2*ds #this is reverse reaction 
+    c3 = c3 #when this is high, A decays  super fast
+    c4 = c4*ds
+    c5 = c5*ds
+    c6 = c6*ds
+    c7 = c7*ds
+    c8 = c8*ds
+    c9 = c9*ds
+    c10 = c10*ds
+    c11 = c11*ds
     
     #to debug and see why a0 is reaching zero, do print
     print(A)
