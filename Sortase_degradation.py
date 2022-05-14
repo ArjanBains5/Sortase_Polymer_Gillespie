@@ -54,8 +54,8 @@ while current_t < tmax:
     a0 = sum(a)
     
     #calculate the new reaction constants:
-    c1 = 1*ds
-    c2 = 0.3*ds #this is reverse reaction 
+    c1 = c1*ds
+    c2 = c2*ds #this is reverse reaction 
     
     #to debug and see why a0 is reaching zero, do print
     print(A)
