@@ -33,7 +33,7 @@ A + B = C      A-B\
 C + B = D      A-B-B\
 D + B = E      A-B-B-B\
 E + B = F      A-B-B-B-B\
-F + B = G      A-B-B-B-B-B\
+F + B = G      A-B-B-B-B-B
 
 **Model Enzyme Death With Building Long Chains and enzyme death**\
 In the final simulation, we merely incorporate everthing we had done previously.  That is, we build a long polymer while we assume that reactant A is degrading and the sortase is degrading over time.
