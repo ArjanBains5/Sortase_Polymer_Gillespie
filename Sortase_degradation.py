@@ -1,6 +1,13 @@
 #now we model enzyme degrading -> reaction constant decreases over time
 #Try different values for c's
 
+# import modules and libraries
+import numpy as np
+from scipy.special import factorial
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+
 ds = 1 #sortase is working at 100% efficiency
 
 # reaction constants
