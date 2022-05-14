@@ -28,12 +28,12 @@ Substrate death of substrate A is modeled with a reaction with reaction constant
 We do this by lowering the values of each and every reaction constant that depends on sortase by the same factor for each time step.  So the c3 reaction is not modified because degradation of reactant A is not dependent on sortase degradation.  This factor is given by ds in the code.
 
 **Model Enzyme Building Long Chains**\
-Modeling the creation of a polymer chain is established by setting your starting concentrations of A, B, and C.  We assume that each step of building the polymer will add one more unit of B onto the end.  Graphically, it is as follows:
-A + B = C      A-B\
-C + B = D      A-B-B\
-D + B = E      A-B-B-B\
-E + B = F      A-B-B-B-B\
-F + B = G      A-B-B-B-B-B
+Modeling the creation of a polymer chain is established by setting your starting concentrations of A, B, and C.  We assume that each step of building the polymer will add one more unit of B onto the end.  Graphically, it is as follows:\
+A + B = C   ->   A-B\
+C + B = D   ->   A-B-B\
+D + B = E   ->   A-B-B-B\
+E + B = F   ->   A-B-B-B-B\
+F + B = G   ->   A-B-B-B-B-B
 
 **Model Enzyme Death With Building Long Chains and enzyme death**\
 In the final simulation, we merely incorporate everthing we had done previously.  That is, we build a long polymer while we assume that reactant A is degrading and the sortase is degrading over time.
